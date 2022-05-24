@@ -19,10 +19,6 @@ jobs:
         upload_sarif: true
         snyk_github_integration_token: ${{ github.token }}
         repository: ${{ github.repository }}
-    - uses: actions/upload-artifact@v3
-      with:
-        name: snyk.sarif
-        path: ${{ github.workspace }}/snyk.sarif
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v2
       with:
