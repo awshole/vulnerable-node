@@ -12,7 +12,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
     - name: Snyk Analysis
-      uses: awshole/snyk-node@v1
+      uses: awshole/snyk-node@main
       with:
         snyk_api_key: ${{ secrets.SNYK_TOKEN }}
         path_to_dependency_file: package.json
