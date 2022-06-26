@@ -2,7 +2,7 @@ name: snyk-analysis-python
 on:
   workflow_dispatch:
   push:
-    paths: [requirements.txt]
+    paths: [package.json]
 jobs:     
   snyk-analysis:
     uses: awshole/snyk-node/.github/workflows/snyk-analysis.yaml@main
