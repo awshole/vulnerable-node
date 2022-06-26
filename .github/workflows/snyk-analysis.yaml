@@ -8,5 +8,4 @@ jobs:
     uses: awshole/snyk-node/.github/workflows/snyk-analysis.yml@main
     with:
       path_to_dependency_file: package.json
-    secrets:
-      snyk_token: inherit
+    secrets: inherit
