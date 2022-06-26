@@ -1,4 +1,4 @@
-name: snyk-analysis-python 
+name: snyk-analysis-javascript 
 on:
   workflow_dispatch:
   push:
