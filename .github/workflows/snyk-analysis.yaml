@@ -9,4 +9,4 @@ jobs:
     with:
       path_to_dependency_file: package.json
     secrets:
-      snyk_token: {{ secrets.SNYK_TOKEN }}
+      snyk_token: inherit
