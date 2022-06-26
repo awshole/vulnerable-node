@@ -5,7 +5,7 @@ on:
     paths: [requirements.txt]
 jobs:     
   snyk-analysis:
-    uses: awshole/snyk-node/.github/workflows/snyk-analysis.yml@main
+    uses: awshole/snyk-node/.github/workflows/snyk-analysis.yaml@main
     with:
       path_to_dependency_file: package.json
     secrets: inherit
